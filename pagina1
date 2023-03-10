@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Oportunidades na Ummense</title>
+<style>
+
+  {border: solid 1px lightgray}
+
+  body,input,textarea,button {font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px;}
+
+  ul {
+  list-style-type: none;
+}
+
+</style>
+
+    <section class="container mt-5 mb-5">
+      <div class="row px-3">
+        <div class="col">
+          <img src="../assets/logo-azul.png" alt="Logo da Ummense" class="mt-3 mb-3 w-50">
+          <h1 class="display-4 fw-bold">Nós precisamos<br>de você!</h1>
+          <p>A Ummense é uma startup em pleno crescimento. Nesse momento, estamos em busca de pessoas proativas e que desejam contribuir com nosso propósito: levar mais qualidade de vida no trabalho a todas as pessoas que usam a plataforma!</p>
+          <button class="btn btn-outline-success rounded-pill px-5" type="button">Inscreva-se</button>
+        </div>
+        <div class="col">
+          <img src="../assets/otto-super-man.png" alt="otto-superman" class="w-50">
+        </div> 
+     </div>
+    </section>
+
+    <section class="mx-4 mt-5 mb-5">
+      <div class="row px-5 gx-5 align-items-center">
+        <div class="col-3">
+          <img src="../assets/team-celebrating.png" alt="Time celebrando" class="w-100">
+        </div>
+        <div class="col d-flex flex-column justify-content-center">
+          <h1>Como é trabalhar na Ummense?</h1>
+          <div class="d-flex flex-row justify-content-between mt-5 gx-1 gap-3">
+            
+            <div class="border-start border-primary border-4 px-4 py-3 shadow">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <img src="../assets/monique.png" alt="Foto da pessoa" class="rounded-circle" style="width: 75px; height: 75px;">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-primary fs-7">Monique Alberti</span>
+                  <span>Tratativa kkk</span>
+                </div>
+              </div>
+              <span class="medium">
+                É um máximo trabalhar na Ummense. O ambiente é saudável, as pessoas são incríveis e o proposito é lindo.
+              </span>
+            </div>
+
+            <div class="border-start border-primary border-4 px-4 py-3 shadow">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <img src="../assets/leocrispilho.png" alt="Foto da pessoa" class="rounded-circle" style="width: 75px; height: 75px;">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-primary fs-7">Leo Crispilho</span>
+                  <span>Comercial</span>
+                </div>
+              </div>
+              <span class="medium">
+                Muito legal poder trabalhar em um propósito que podemos ver claramente sendo manifestado em nossos clientes!
+              </span>
+            </div>
+
+            <div class="border-start border-primary border-4 px-4 py-3 shadow">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <img src="../assets/pedroponestk.jpg" alt="Foto da pessoa" class="rounded-circle" style="width: 75px; height: 75px;">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold text-primary fs-7">Pedro Ponestk</span>
+                  <span>Comercial</span>
+                </div>
+              </div>
+              <span class="medium">
+                Eu amo trabalhar na Ummense porquê meu nome é Pedro. E também porque não fui eu que escrevi, vou falar que aqui é supoer legal e várias coisas assim, obrigado!
+              </span>
+            </div>
+
+          </div>
+       </div>
+    </section>
+
+    <section class="container mt-5 mb-5">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="col-4">
+          <form class="d-flex flex-column gap-4">
+            <div class="form-group">
+              <input type="text" class="form-control border-dark" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control border-dark" id="email" placeholder="Seu e-mail">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control border-dark" id="celular" placeholder="Seu celular">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control border-dark" id="tempoexp" placeholder="Experiência (anos)">
+            </div>
+            <div class="form-group">
+              <select id="vaga" class="form-select border-dark">
+                <option select disable value="area de interesse">Área de interesse</option>
+                <option value="comercial">Comercial</option>
+                <option value="desenvolvimento">Desenvolvimento</option>
+                <option value="vendas">Vendas</option>
+                <option value="marketing">Marketing</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control border-dark" id="sobre" rows="5" placeholder="Escreva um pouco sobre você!"></textarea>
+            </div>
+            <div>
+              <label for="arquivo">
+                <i class="bi-upload">
+                  <span class="p-2">
+                    Anexe seu currículo aqui
+                  </span>
+                </i>
+              </label>
+              <input type="file" id="arquivo" class="form-control border-dark">
+            </div>
+            <button type="submit" class="btn btn-success px-5 rounded-pill">
+              Enviar
+            </button>
+          </form>
+        </div>
+
+        <div class="col-4">
+          <h1>Vem ser um <br> Ummano!</h1>
+          <img src="../assets/team-celebrating.png" alt="Imagem Ummanos" class="w-100 mb-4 mt-0">
+          <h6 class="fw-normal medium w-100">
+            A Ummense é a ferramenta inteligente que torna a rotina da sua equipe
+            muito mais simples e prática. Na plataforma toda a informação que o time
+            precisa fica centralizada em um único lugar. Todos ganham mais tempo e agilidade para
+            administrar tarefas, tendo tudo acessível à 2 cliques de distância.
+          </h6>
+        </div>
+      </div>
+    </section>
+
+  
+    <footer class="mt-5 px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="col-3">
+          <img src="../assets/logo-azul.png" alt="Logo Ummense" class="mb-3 w-50">
+          <p class="small text-muted">Ganhe mais eficiência com uma ferramenta inteligente e profissional de gestão projetos e processos para equipes.</p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/ummense/" target="_blank" class="btn btn-light btn-media rounded-circle">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com.br/c/ummense" target="_blank" class="btn btn-light btn-media rounded-circle">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="row">
+            <div class="col">
+              <p class="fw-bold text-secondary">A Empresa</p>
+              <ul>
+                <li>
+                  <a href="a" class="text-muted">Sobre Nós</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Carreiras</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Vagas</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Política de Privacidade</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="fw-bold text-secondary">A Empresa</p>
+              <ul>
+                <li>
+                  <a href="a" class="text-muted">Sobre Nós</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Carreiras</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Vagas</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Política de Privacidade</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="fw-bold text-secondary">A Empresa</p>
+              <ul>
+                <li>
+                  <a href="a" class="text-muted">Sobre Nós</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Carreiras</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Vagas</a>
+                </li>
+                <li>
+                  <a href="a" class="text-muted">Política de Privacidade</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </footer>
+  </body>
+</html>
